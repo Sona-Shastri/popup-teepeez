@@ -554,12 +554,13 @@ details:nth-child(odd),details:nth-child(even),
 
   // If a logo.png is present in the folder, use it and hide the default mark + text.
   document.querySelectorAll('img[data-logo]').forEach(function(img){
-    img.addEventListener('load',function(){
+    function show(){
       img.style.display='inline-block';
       var p=img.closest('.logo');
       p.querySelectorAll('[data-default]').forEach(function(el){el.style.display='none';});
-    });
-    img.addEventListener('error',function(){img.remove();});
+    }
+    if(img.complete && img.naturalWidth>0){ show(); }
+    else { img.addEventListener('load',show); img.addEventListener('error',function(){img.remove();}); }
   });
 
   // Send the booking request straight to Pop Up Teepeez (no email app opens).
