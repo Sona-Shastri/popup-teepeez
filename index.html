@@ -318,6 +318,30 @@ details:nth-child(odd),details:nth-child(even),
   .theme.custom .n{padding:14px 10px;}
 }
 
+/* ================= professional polish ================= */
+:root{--edge:rgba(58,30,82,.20);}
+/* thinner, softer outlines everywhere */
+.step,.review,.contact-box,.theme,details,.tag,.incl,.chip,
+.field input,.field select,.field textarea,.hero-badge,.mtabs a{border-width:1.5px;border-color:var(--edge);}
+nav,.mtabs{border-bottom:1px solid var(--edge);}
+.step .num,.incl .ck,.logo-img{border-width:2px;}
+.cline .ci{background:rgba(212,64,154,.10);border-color:var(--edge);}
+/* clean filled buttons, no hard outline */
+.btn{border:none;}
+/* uniform white Polaroid frames (was picking up theme gradient) */
+.theme.has-photo{background:#fff;}
+/* editorial section labels instead of loud sticker pills */
+.eyebrow{background:none;border:none;box-shadow:none;padding:0;color:var(--pink-deep);text-transform:uppercase;letter-spacing:.16em;font-size:.82rem;font-weight:600;}
+#themes .eyebrow,#book .eyebrow{color:#fff;opacity:.92;}
+/* calmer, richer color bands */
+.band-pink{background:#7A2F62;}
+.band-mint{background:#EADCF4;}
+/* refined price card */
+.tag{background:#fff;}
+.tag .hole{display:none;}
+.tag .amt{color:var(--pink-deep);}
+.tag .from{color:var(--ink-soft);}
+
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto;}}
 </style>
 
@@ -399,7 +423,7 @@ details:nth-child(odd),details:nth-child(even),
       <div class="step"><div class="num">3</div><h3>We clean up</h3><p>The next day we come back, pack it all down, and haul it away. No folding, no laundry, no mess. Just the memories.</p></div>
     </div>
   </div>
-  <svg class="wave" viewBox="0 0 1200 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q150 0 300 24 T600 24 T900 24 T1200 20 V48 H0 Z" fill="#D4409A"/></svg>
+  <svg class="wave" viewBox="0 0 1200 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q150 0 300 24 T600 24 T900 24 T1200 20 V48 H0 Z" fill="#7A2F62"/></svg>
 </section>
 
 <!-- ============ THEMES ============ -->
@@ -496,7 +520,7 @@ details:nth-child(odd),details:nth-child(even),
       <div class="review"><div class="stars">★★★★★</div><q>From booking to teardown, everything was seamless. The tents are spotless and the themed details are adorable. Highly recommend Pop Up Teepeez for any celebration!</q><div class="who">— Priya S., Wheaton</div></div>
     </div>
   </div>
-  <svg class="wave" viewBox="0 0 1200 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q150 0 300 24 T600 24 T900 24 T1200 20 V48 H0 Z" fill="#D4409A"/></svg>
+  <svg class="wave" viewBox="0 0 1200 48" preserveAspectRatio="none" aria-hidden="true"><path d="M0 30 Q150 0 300 24 T600 24 T900 24 T1200 20 V48 H0 Z" fill="#7A2F62"/></svg>
 </section>
 
 <!-- ============ CONTACT / BOOK ============ -->
